@@ -1,0 +1,57 @@
+/* Mengatur ulang margin dan padding default untuk body dan table */
+body,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+/* Menggunakan border-collapse untuk tabel */
+table {
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  /* Menggunakan Arial sebagai font-family */
+  width: 100%;
+  /* Menetapkan lebar tabel menjadi 100% */
+  border: 1px solid #ccc;
+  /* Menambahkan border pada tabel */
+}
+
+/* Gaya untuk thead */
+thead td {
+  background-color: #000000;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Gaya untuk baris genap di tbody */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Gaya untuk baris ganjil di tbody */ 
+tbody tr:nth-child(odd) {
+  background-color: white;
+  color: #333;
+}
+
+/* Efek saat dihover */
+tbody tr:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+/* Menetapkan lebar untuk kolom pertama */
+td:first-child {
+  width: 50px;
+  font-weight: bold;
+}
+
+/* Menetapkan lebar untuk kolom lainnya */
+td:not(:first-child) {
+  width: 100px;
+  border-bottom: 1px solid #ddd;
+}
